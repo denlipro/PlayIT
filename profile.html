@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
+    <title>PlayIT</title>
+</head>
+<body>
+    <div class="overlay" id="info">
+        <div class="close-btn" onclick="closeNav()"><img src="img/cross.svg" alt=""></div>
+            <div class="info-project">
+                <p>PlayIT - онлайн-квест, приуроченный ко дню рождения факультета Информационных Систем и Технологий.</p>
+                <p>Выполняй задания, получай за них флекскоины и трать их в нашем новом разделе «Магазин». Уникальные значки, стикерпаки, силиконовые браслеты - все это и многое другое ждёт тебя!</p>
+                <p>Трое участников, набравших к 16 марта наибольшее количество опыта, получат особенные призы, среди которых вкуснейшие кексы, футболки с уникальным дизайном, носочки, кружки, флеш-накопители и другая техника. Дерзай!</p>
+                <p>Также, мы ждем твои поздравления в историях Instagram. Автор самой интересной истории получит отдельный подарок от организаторов!</p>
+            </div>
+    </div>
+    <div class="error" id="error">
+        <div class="close-btn" onclick="closeError()"><img src="img/cross.svg" alt=""></div>
+        <div class="error-text">Упс! Кажется введен неверный код :C Попробуй другой! Мы верим в тебя:)</div>
+    </div>
+    <div class="container ">
+        <header>
+            <div class="row">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 order-2 order-sm-1">
+                    <div class="left-btns">
+                        <div class="info" onclick="openNav()"></div>
+                        <a href="index.html"><div class="back"></div></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 order-1 order-sm-2">
+                    <div class="page-ttl">Профиль</div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 order-3 order-sm-3">
+                    <div class="rigth-btns">
+                        <div class="coins">222</div>
+                        <div class="flexcoin"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 offset-0 offset-sm-0 offset-md-1 offset-lg-2 offset-xl-2 d-flex justify-content-center">
+                <div class="photo">
+                    <img src="img/user.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-5 col-lg-4 col-xl-4 offset-0 offset-sm-2 offset-md-0 offset-lg-0 offset-xl-0">
+               <div class="profile-info">
+                   <div class="name">Имя Фамилия</div>
+                   <div class="rate-place">Место в рейтинге: 72</div>
+                   <div class="rate-info">Ваше место разделяют еще 2 человека</div>
+                   <div class="level">
+                       Новенький (202 xp)
+                       <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="xp">1000 xp</div>
+                   </div>
+               </div>
+
+            </div>
+            <div class="col-12 col-sm-8 col-md-10 col-lg-8 col-xl-8 offset-0 offset-sm-2 offset-md-1 offset-lg-2 offset-xl-2">
+                <div class="send">
+                    <form action=""><input type="text" class="code" placeholder="введите код..."><input type="submit" value="Отправить" class="send-btn"></form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
